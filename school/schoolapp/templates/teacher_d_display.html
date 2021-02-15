@@ -349,7 +349,7 @@
 		<div class="table-agile-info">
  <div class="panel panel-default">
     <div class="panel-heading">
-     Banner Images
+     Teachers Details
     </div>
     <div>
       <table class="table" ui-jq="footable" ui-options='{
@@ -365,8 +365,10 @@
         <thead>
           <tr>
             
-            <th>Banner Title</th>
-            <th>Banner Images</th>
+            <th>Teachers Name</th>
+            <th>Teachers Degisnation</th>
+            <th>Teachers Images</th>
+            <th>Join Date</th>
             <th data-breakpoints="xs">Remark</th>
            
             
@@ -376,11 +378,11 @@
             {% for banner in rok4 %}
           <tr data-expanded="true">
             
-            <td>{{ banner.Name }}</td>
+            <td>{{ banner.name }}</td>
             <td>{{ banner.deg }} </td>
             <td><img src="{{ banner.img.url }}" style="width: 100px; height: 75px;" alt="">  </td>
             <td>{{ banner.join_date }} </td>
-            <td><a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+            <td><a href="delete_teacher_data/{{ banner.id }}"><i class="fa fa-trash" aria-hidden="true"></i></a>
            &nbsp;&nbsp;&nbsp;&nbsp; <a href=""><i class="fa fa-globe" aria-hidden="true"></i></a></td>
             
           </tr>

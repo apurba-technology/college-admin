@@ -8,11 +8,11 @@ from django.contrib import messages
 def index(request):
     if request.method == 'GET':
         Banners = Banner.objects.all() 
-        Notices = Notice.objects.all()
-        Gallerys = Gallery.objects.all() 
-        Event = Events_mod.objects.all()
-        Teachernots = Teachernot.objects.all()
-        rok1 = Rok_head.objects.all()
+        Notices = Notice.objects.order_by('-id')
+        Gallerys = Gallery.objects.order_by('-id') 
+        Event = Events_mod.objects.order_by('-id')
+        Teachernots = Teachernot.objects.order_by('-id')
+        rok1 = Rok_head.objects.order_by('-id')
         return render(request, 'index.html', {'Note' : Notices, 'banner_images' : Banners, 'gal' : Gallerys,'Even':Event, 'teach':Teachernots, 'rok':rok1 })
 
 
@@ -40,7 +40,7 @@ def events(request):
         bb.events_name=request.POST['events_name']
         bb.events_link=request.POST['events_link']
         bb.save()
-        return HttpResponse("ok")
+        return redirect('/disply_event')
     else:
         b=Events_modForm()
         return render(request,'events_up.html',{'form':b})
@@ -65,7 +65,7 @@ def teacher_notice_up(request):
         
         if foot.is_valid():
             foot.save()
-        return redirect('/display_notice')
+        return redirect('/display_t_not')
     else:
         foot= TeachernotForm()
     return render(request,'teacher_not_up.html',{'form': foot})
@@ -140,7 +140,24 @@ def dele_gallery(request, id):
     Gallerys = Gallery.objects.get(id=id)
     Gallerys.delete()
     return redirect('/display_gallery')
+def delete_events(request, id):
+    ev = Events_mod.objects.get(id=id)
+    ev.delete()
+    return redirect('/disply_event')
 
+def delete_head(request, id):
+    head1 = Rok_head.objects.get(id=id)
+    head1.delete()
+    return redirect('/display_head')
+def delete_teach_data(request, id):
+    tea = Teacher_data.objects.get(id=id)
+    tea.delete()
+    return redirect('/display_teach_data')
+
+def delete_teach_not(request, id):
+    teach = Teachernot.objects.get(id=id)
+    teach.delete()
+    return redirect('/display_t_not')
 
 def mission(request):
     return render(request, "mission.html")
@@ -174,7 +191,7 @@ def teachers(request):
         
         if fo2.is_valid():
             fo2.save()
-            return redirect('/display_gallery')
+            return redirect('display_teach_data')
             
     else:
         fo2 = Teacher_dataForm()
@@ -186,7 +203,75 @@ def rok(request):
         fo3 = Rok_headForm(request.POST)
         if fo3.is_valid():
             fo3.save()
-            return redirect('/display_gallery')
+            return redirect('/display_head')
     else:
         fo3 = Rok_headForm()
     return render(request,'he.html',{'form':fo3})
+
+
+###############################################################
+##########################################################################
+# Create your views here.
+def ind(request):
+    if 'user_id' in request.session:
+        return redirect('/success')
+    else:
+        return render(request, 'ind.html')
+
+
+def register(request):
+    if request.method == "POST":
+        errors = User.objects.register_validator(request.POST)
+        if len(errors):
+            for key, value in errors.items():
+                messages.add_message(request, messages.ERROR, value, extra_tags='register')
+            return redirect('/admin')
+        else:
+            pw_hash = (request.POST['password'].encode())
+            user = User.objects.create(first_name=request.POST['first_name'], last_name=request.POST['last_name'], email=request.POST['email'], password=pw_hash)
+            request.session['user_id'] = user.id
+            return redirect("/success")
+    else:
+        return redirect("/admin")
+
+
+def login(request):
+    if request.method == "POST":
+        errors = User.objects.login_validator(request.POST)
+        if len(errors):
+            for key, value in errors.items():
+                messages.add_message(request, messages.ERROR, value, extra_tags='login')
+            return redirect('/admin')
+        else:
+            user = User.objects.get(email=request.POST['email'])
+            request.session['user_id'] = user.id
+            return redirect("/wall")
+
+
+def wall(request):
+    if 'user_id' not in request.session:
+        return redirect('/admin')
+    else:
+        context = {
+            "user": User.objects.get(id=request.session['user_id'])
+        }
+        return render(request,'Admin.html', context)
+
+
+def success(request):
+    if 'user_id' not in request.session:
+        return redirect('/admin')
+    else:
+        context = {
+            "user": User.objects.get(id=request.session['user_id'])
+        }
+        return redirect('/wall', context)
+
+
+def reset(request):
+    if 'user_id' not in request.session:
+        return redirect('/admin')
+    else:
+        request.session.clear()
+        print("session has been cleared")
+        return redirect("/admin")

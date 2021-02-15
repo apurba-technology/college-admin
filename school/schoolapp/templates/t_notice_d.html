@@ -5,6 +5,8 @@
 <title>Tenughat Mahavidyalaya Admin Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstrap-css -->
@@ -385,7 +387,7 @@
             
             <td><a href="{{ Note1.attach_file.url }}">View</a></td>
             
-            <td><a href="delete_notice/{{Note1.id}}">Delete</a></td>
+            <td><a href="delete_teacher_not/{{Note1.id}}"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
           </tr>
           
           {% endfor %}

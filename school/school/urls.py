@@ -23,7 +23,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('',views.index),
-    path('admin', views.admin),
+    #path('admin', views.admin),
     path('banner_upload', views.banner_upload, name='banner_upload'), 
     path('notice_up', views.notice_upload),
     path('ev',views.events),
@@ -35,6 +35,10 @@ urlpatterns = [
     path('delete_notice/<int:id>', views.delete_notice),
     path('delete_banner/<int:id>', views.delete_banner),
     path('delete_gallery/<int:id>', views.dele_gallery, name='delete_gallery'),
+    path('delete_events/<int:id>',views.delete_events),
+    path('delete_head/<int:id>',views.delete_head),
+    path('delete_teacher_not/<int:id>',views.delete_teach_not),
+    path('delete_teacher_data/<int:id>',views.delete_teach_data),
     path('teacher_not_up', views.teacher_notice_up),
     path('mission',views.mission),
     path('fee',views.fee),
@@ -48,9 +52,15 @@ urlpatterns = [
     path('ro',views.rok),
     path('display_head',views.headline),
     path('display_t_not',views.Teacher_notice_d),
-    path('display_teach_data',views.teacher_data_display),
+    path('display_teach_data',views.teacher_data_display, name='display_teach_data'),
     path('disply_event',views.events_d),
-
+    ######################
+    path('admin', views.ind),
+    path('register', views.register),
+    path('login', views.login),
+    path('success', views.success),
+    path('reset', views.reset),
+    path('wall', views.wall),
   
 ]
 

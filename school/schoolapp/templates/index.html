@@ -256,9 +256,10 @@ setInterval(GetClock,1000);
         
 </div>
        </div>
-       <div class="col-md-3 bg1" >
+       <div class="col-md-3 bg1" style="height: 290px;
+       overflow: overlay;" >
         {% for Eve in Even %}
-        <a href=""> <button type="button " class="sidebar list-group-item list-group-item-action">
+        <a href="{{ Eve.events_link }}"> <button type="button " class="sidebar list-group-item list-group-item-action">
           {{ Eve.events_name }}
       </button></a>
         {% endfor %}
@@ -289,7 +290,7 @@ setInterval(GetClock,1000);
       
   
      
-  <div class="row" style="width: 100%;background: url(img/btn-bg.jpg) ; width: 100%; padding-bottom: 10px;"> 
+  <div class="row" style="width: 100%;background: url({% static "img/btn-bg.jpg"%} ) ; width: 100%; padding-bottom: 10px;"> 
     <div class="container ">
       <div style="padding-bottom: 150px;">
     <div class="col-xs-equal"><div class="men2 men">  <a   href="">	<img src="{%static "img/icon6.png"%} " alt="">Examination Branch</a> </div>  </div>
@@ -576,7 +577,7 @@ setInterval(GetClock,1000);
   <div class="continer"><marquee class="foo" behavior="scroll" direction="left"
     onmouseover="this.stop();"
     onmouseout="this.start();" scrollamount="5">
-    <div> <img class="zoom" src="img/001.png" alt="">  
+    <div> <img class="zoom" src="{% static "img/001.png" %} " alt="">  
     <img class="zoom" src="{%static "img/002.png"%} " alt=""> 
     <img class="zoom" src="{%static "img/004.jpg"%}" alt=""> 
     <img class="zoom" src="{%static "img/005.png"%}" alt="">

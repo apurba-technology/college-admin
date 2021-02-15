@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=" {% static "css/style.css" %} ">
+    <link rel="stylesheet" href=" {%static "css/bootstrap-grid.css" %} ">
+    <link href="{%static  "css/style2.css"%} " rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="{%static  "css/bootstrap-reboot.css"%} ">
+   
+    <link rel="stylesheet" href="{%static  "css/bootstrap.css"%} ">
+    
+    
+   
+
+    <title>Fast project</title>
+  </head>
+  <body>
+      
+<div class="navtop1">
+    <nav class="navbar   ">
+
+        <!-- Links -->
+        <div class="container ">
+    
+            
+           
+          <label class="nav-item pad">
+            <a class="nav-link navcol"  href="#">Admissions</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Placements</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Jobs at AMU</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Tenders</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Contact Us</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Calender-2021</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Old Website</a>
+          </label>|
+          
+          
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Site Map</a>
+            </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">A</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">A+</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">A-</a>
+          </label>|
+          <label class="nav-item pad">
+            
+            <a class="nav-link navcol" href="#"><i class="fa fa-sign-in" ></i> Login</a>
+          </label>
+        
+        
+      </div>
+      </nav>
+</div>
+<!---->
+
+  <div class="" style="padding-bottom: 10px; ">
+    <div class="row" style="width: 100%;">
+      <div class="col-4">
+        
+        <img class="im9" src="{%static "img/logo.png"%} ">  
+      
+
+      </div>
+      <div class="col-4" >
+        </div>
+      <div class="col-4">
+        <div id="clockbox" class="clock"> </div>
+       
+      </div>
+    </div>
+<script type="text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+tmonth[nmonth]+" "+ndate+" "+nyear+"<br> "+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script> 
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="topnav">
+    <div class=" ">
+    <div class="col-md-12">
+      <div class="topnav1" id="myTopnav">
+        
+       
+        
+          <a class="aa" href="/">Home</a>
+       
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1" href="">ABOUT US   &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+           
+          </button>
+          <div class="dropdown-content1">
+            <a href="history">History</a>
+            <a href="mission">Mission $ Vission</a>
+            <a href="#">Gole</a>
+            <a href="#">Campus</a>
+            <a href="">Gallary</a>
+          </div>
+        </div>
+        <div class="dropdown1"> <b class="gap">|</b>
+          <button class="dropbtn1">ADMINISTRATION    &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+           
+          </button>
+          <div class="dropdown-content1">
+          <a href="administor-off">ADMINISTRATIVE OFFICERS</a>
+          <a href="adminstration">Principal Massege</a>
+          <a href="excutive_teacher"> EXECUTIVE COUNCIL</a>
+        </div>
+        </div>
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">ACADEMICS    &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+           
+          </button>
+          <div class="dropdown-content1">
+          <a href="fee">Fee Structure</a>
+          <a href="press_note">Press Note</a>
+        </div>
+      </div>
+  
+      
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">RESEARCH    &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+           
+          </button>
+          <div class="dropdown-content1">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> 
+       
+        <div class="dropdown1"><b class="gap"> |</b>
+          <button class="dropbtn1">ADMISSIONS    &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+           
+          </button>
+          <div class="dropdown-content1">
+            <a href="fee.html">Fee Structure</a>
+            <a href="exam.html">Press Note</a>
+          </div>
+        </div>
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">EXAMINATIONS
+           
+          </button>
+        </div>
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">STUDENT SUPPORT
+           
+          </button>
+        </div>
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">AMENITIES 
+           
+          </button>
+        </div>
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">E-RESOURCES
+           
+          </button><b class="gap">|</b>
+        </div>
+        
+          <a href="contact">Contact Us</a>
+        
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div></div></div></div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav1") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav1";
+      }
+    }
+    </script>
+               
+             
+      <!--banner_-->
+     <div class="cont9">
+
+     
+      
+      <div class="exam-menu">
+      <div class="qul"> <a href="">ADMINISTRATION</a> </div>
+       
+       <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i> Vice-Chancellor</a>  <br>
+        <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i> Registrar</a>   <br>
+        <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i> Executive Council</a>   <br>
+         <a href=""> <i class="fa fa-arrow-right" aria-hidden="true"></i>  Policy Making Bodies</a> <br>
+         <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i>  Regulatory Bodies</a>  <br>
+         <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i>Infrastructure</a>   <br>
+         <a href=""><i class="fa fa-arrow-right" aria-hidden="true"></i>   Administrators</a>   <br>
+          <a href=""> <i class="fa fa-arrow-right" aria-hidden="true"></i> Other Officers / Units</a> <br>
+         
+           
+            
+           
+           
+           
+            
+          
+           
+      </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      <div class="table1" >
+        <div class="mission1">
+          <h2>ADMINISTRATIVE OFFICERS</h2> 
+         </div>
+        <div class="officer1">
+          <div class="officer12">
+            <samp class="off1">  Sri Arvind Kumar, IAS</samp> <br> 
+              <samp class="off2">   Vice Chancellor (I/c) </samp><br> 
+            040-27098048, 27682364, 27682221 <br></div>
+        </div>
+        <div class="officer2">
+          <div class="officer12">
+            <samp class="off1">   Prof. Ch. Gopal Reddy</samp> <br>
+              <samp class="off2">      Registrar </samp><br>
+            040-27098043, 27682363 <br>
+          </div>
+        </div>
+        <div class="officer1">
+          <div class="officer12">
+            <samp class="off1">  Prof. T. Krishna Rao</samp> <br>
+              <samp class="off2">      O. S. D. to V. C.</samp> <br>
+            040-27096194, 27682372 <br>
+          </div>
+        </div>
+        <div class="officer2">
+<div class="officer12">
+  <samp class="off1"> Dr. M. Vijjulatha</samp> <br>
+  <samp class="off2"> Dean, Development & UGC Affairs</samp> <br>
+  040-27098292,27682243 <br>
+</div>
+        </div>
+        <div class="officer1">
+<div class="officer12">
+  <samp class="off1"> Prof. B. Rajendra Naik</samp> <br> 
+  <samp class="off2">Dean, Students Affairs</samp> <br>
+  040-27098385, 27682250 <br>
+</div>
+        </div>
+        <div class="officer2">
+<div class="officer12">
+ <samp class="off1">D. G. Mallesham</samp>  <br>
+<samp class="off2">Special Officer (Alumni Association of O.U)</samp>  <br>
+9346917018,040-27682287 <br>
+</div>
+        </div>
+            
+    </div>
+
+     </div>
+ 
+
+<div class="col-md-12">
+    <div class="row foo" >
+      
+      <div class="col-md-3">
+        <b><u> Quick Links</u></b><br>
+        <a class="ql" href="">Annual Report</a><br>
+        <a class="ql" href=""> AMU Gazette</a> <br>
+          <a class="ql" href="">AMU Special Centers</a> <br>
+            <a class="ql" href=""> Academic Programmes Committee </a><br>
+              <a class="ql" href="">  Campus Notices</a> <br>
+                <a class="ql" href=""> Chemical Research Unit</a> <br>
+                  <a class="ql" href=""> Prof. M.N. Faruqui Computer Centre</a> <br>
+                    <a class="ql" href=""> OSO-AMUPurchase & Tenders </a><br>
+      </div>
+      <div class="col-md-3"><br><a class="ql" href=""> CPCDirectoriesEmployee Services</a> <br>
+        <a class="ql" href=""> Facilities</a> <br>
+          <a class="ql" href=""> Fikr-O-Nazar</a> <br>
+            <a class="ql" href="">  Green University Project</a> <br>
+              <a class="ql" href=""> Heritage CellIntellectual</a> <br>
+                <a class="ql" href="">  RTITransparency Officer</a> <br>
+                  <a class="ql" href="">  Search Profile</a> <br>
+                    <a class="ql" href="">  Tahzeeb-ul-AkhlaqTarana</a>
+      </div>
+      <div class="col-md-3"><br> <a class="ql" href=""> Property CellInternal Complaints Committee</a> <br>
+        <a class="ql" href=""> IQAC </a><br>
+          <a class="ql" href="">   Innovation</a> <br>
+            <a class="ql" href="">   CouncilIT</a> <br>
+              <a class="ql" href="">  Help</a> <br>
+                <a class="ql" href=""> DeskJobs at AMUMaps</a> <br>
+                  <a class="ql" href=""> Musa Dakri Museum </a>
+         
+         
+        
+        </div> 
+        <div class="col-md-3"><b>
+         <u> Contact Us</u> </b><br>
+         <a class="ql" href=""> <i class="fa fa-map-marker" aria-hidden="true"></i> Rathbari,Malda,731250,West Bangal</a> <br>
+          <a class="ql" href=""> <i class="fa fa-envelope" aria-hidden="true"></i> apurbamandal720@gmail.com</a><br>
+            <a class="ql" href="">  <i class="fa fa-phone-square" aria-hidden="true"></i> 6296813420</a> <br>
+              <a class="ql" href=""> <i class="fa fa-whatsapp" aria-hidden="true"></i> 8016405821</a>
+      
+        </div>
+        <div class="col-12 off33" >Copyright © 2019 Apu College crafted with in Gen Next Information Technology. All Rights Reserved</div></div>
+   
+      </div>
+       </div>
+ 
+
+	
+
+
+   <!-- col class automatically divides my columns
+   into equal parts -->
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i>Top</button>
+
+   <!--footer style="background-color: black;width: 100%;">
+    
+    <div class="container foot" style="color: azure;"> 
+     <center> Copyright © 2019 Apu College crafted with  in Gen Next Information Technology. All Rights Reserved</center>
+    </div>
+  
+</!--footer-->
+
+    
+
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	
+	
+	
+
+	
+
+	
+
+	<!-- flexisel (for special offers) -->
+	<script src="js/jquery.flexisel.js"></script>
+	<script>
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 2
+					}
+				}
+			});
+
+		});
+	</script>
+
+
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+  
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+ 
+
+
+  </body>
+</html>

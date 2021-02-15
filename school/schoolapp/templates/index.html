@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=" {% static "css/style.css" %} ">
+    <link rel="stylesheet" href=" {%static "css/bootstrap-grid.css" %} ">
+    <link href="{%static  "css/style2.css"%} " rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="{%static  "css/bootstrap-reboot.css"%} ">
+   
+    <link rel="stylesheet" href="{%static  "css/bootstrap.css"%} ">
+    
+    
+   
+
+    <title>Fast project</title>
+  </head>
+  <body>
+      
+<div class="navtop1">
+    <nav class="navbar   ">
+
+        <!-- Links -->
+        <div class="container ">
+    
+            
+           
+          <label class="nav-item pad">
+            <a class="nav-link navcol"  href="#">Admissions</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Placements</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Jobs at AMU</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Tenders</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Contact Us</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Calender-2021</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Old Website</a>
+          </label>|
+          
+          
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">Site Map</a>
+            </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">A</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">A+</a>
+          </label>|
+          <label class="nav-item pad">
+            <a class="nav-link navcol" href="#">A-</a>
+          </label>|
+          <label class="nav-item pad">
+            
+            <a class="nav-link navcol" href="#"><i class="fa fa-sign-in" ></i> Login</a>
+          </label>
+        
+        
+      </div>
+      </nav>
+</div>
+<!---->
+
+  <div class="" style="padding-bottom: 10px; ">
+    <div class="row" style="width: 100%;">
+      <div class="col-4">
+        
+        <img class="im9" src="{%static "img/logo.png"%} ">  
+      
+
+      </div>
+      <div class="col-4" >
+        </div>
+      <div class="col-4">
+        <div id="clockbox" class="clock"> </div>
+       
+      </div>
+    </div>
+<script type="text/javascript">
+var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+tmonth[nmonth]+" "+ndate+" "+nyear+"<br> "+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script> 
+
+  </div>
+
+
+
+
+
+
+
+
+  <div class="topnav">
+    <div class=" ">
+    <div class="col-md-12">
+      <div class="topnav1" id="myTopnav">
+        
+       
+        
+          <a class="aa" href=" ">Home</a>
+       
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1" href="">ABOUT US   &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+           
+          </button>
+          <div class="dropdown-content1">
+            <a href="history">History</a>
+            <a href="mission">Mission $ Vission</a>
+            <a href="#">Gole</a>
+            <a href="#">Campus</a>
+            <a href="">Gallary</a>
+          </div>
+        </div>
+        <div class="dropdown1"> <b class="gap">|</b>
+          <button class="dropbtn1">ADMINISTRATION    &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+           
+          </button>
+          <div class="dropdown-content1">
+          <a href="administor-off">ADMINISTRATIVE OFFICERS</a>
+          <a href="adminstration">Principal Massege</a>
+          <a href="excutive_teacher"> EXECUTIVE COUNCIL</a>
+        </div>
+        </div>
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">ACADEMICS    &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+           
+          </button>
+          <div class="dropdown-content1">
+          <a href="fee">Fee Structure</a>
+          <a href="press_note">Press Note</a>
+        </div>
+      </div>
+  
+      
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">RESEARCH    &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+           
+          </button>
+          <div class="dropdown-content1">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div> 
+       
+        <div class="dropdown1"><b class="gap"> |</b>
+          <button class="dropbtn1">ADMISSIONS    &nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i>
+           
+          </button>
+          <div class="dropdown-content1">
+            <a href="fee.html">Fee Structure</a>
+            <a href="exam.html">Press Note</a>
+          </div>
+        </div>
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">EXAMINATIONS
+           
+          </button>
+        </div>
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">STUDENT SUPPORT
+           
+          </button>
+        </div>
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">AMENITIES 
+           
+          </button>
+        </div>
+        <div class="dropdown1"><b class="gap">|</b>
+          <button class="dropbtn1">E-RESOURCES
+           
+          </button><b class="gap">|</b>
+        </div>
+        
+          <a href="contact">Contact Us</a>
+        
+        <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div></div></div></div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav1") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav1";
+    }
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+ 
+
+
+             
+      <!--banner_--> 
+      <div class="row" style="width:100%;"> 
+          <div class="col-md-9">
+<div class="slideshow-container">
+      
+  {% for banner in banner_images %}
+    <div class="mySlides">
+          <img src="{{ banner.banner_image.url }} " class="slide430"  >
+          
+         
+    </div>
+    
+        {% endfor %}
+        
+</div>
+       </div>
+       <div class="col-md-3 bg1" >
+        {% for Eve in Even %}
+        <a href=""> <button type="button " class="sidebar list-group-item list-group-item-action">
+          {{ Eve.events_name }}
+      </button></a>
+        {% endfor %}
+           
+        
+    </div>
+      </div>
+          
+            
+            <script>
+              var slideIndex = 0;
+              showSlides();
+              
+              function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                slides[slideIndex-1].style.display = "block";  
+                setTimeout(showSlides, 4000);
+              }
+              </script>
+      
+  
+      
+  
+     
+  <div class="row" style="width: 100%;background: url(img/btn-bg.jpg) ; width: 100%; padding-bottom: 10px;"> 
+    <div class="container ">
+      <div style="padding-bottom: 150px;">
+    <div class="col-xs-equal"><div class="men2 men">  <a   href="">	<img src="{%static "img/icon6.png"%} " alt="">Examination Branch</a> </div>  </div>
+    <div class="col-xs-equal "><div class="men2 men"> <a   href="">	<img src="{%static "img/icon3.png"%} " alt="" hspace="3">Distance Education</a></div> </div>
+    <div class="col-xs-equal"><div class="men2 men"><a   href="">	<img src="{%static "img/icon2.png"%} " alt="" hspace="3">Admissions (DoA)</a> </div> </div>
+    <div class="col-xs-equal"> <div class="men2 men"><a   href="">	<img src="{%static "img/icon5.png"%} " alt="" hspace="3">College Login</a></div> </div>
+    <div class="col-xs-equal"><div class="men2 men" ><a class="" href=""><img src="{%static "img/icon11.png"%} " alt="" hspace="3">IQAC</a>  </div></div> 
+    <div class="col-xs-equal"><div class="men2 men"><a   href=""><img src="{%static "img/icon8.png"%} " alt="" hspace="3">Foreign Students</a>  </div></div>
+    <div class="col-xs-equal "><div class="men2 men"> <a  href="">	<img src="{%static "img/icon1.png"%} " alt="" hspace="3">Results</a></div> </div>
+    <div class="col-xs-equal"><div class="men2 men"><a   href=""><img src="{%static "img/icon4.png"%} " alt="" hspace="3">Academic Info.</a> </div> </div>
+    <div class="col-xs-equal"><div class="men2 men"> <a   href=""><img src="{%static "img/icon10.png"%} " alt="" hspace="3">Statistical Cell</a> </div></div>
+    <div class="col-xs-equal"><div class="men2 men"><a   href=""><img src="{%static "img/icon9.png"%} " alt="" hspace="3">Tenders</a> </div></div>
+    
+  </div>
+
+      <marquee behavior="scroll" direction="left"
+      onmouseover="this.stop();"
+      onmouseout="this.start();" scrollamount="3" style="padding-top: 5px;background-color: #5b0b0b; color: white; height:  40px;" > 
+      {% for rok2 in rok %}
+      <a class="mar" href="{{ rok2.link }}"> <b> {{ rok2.title }}</b></a> |
+      {% endfor %}
+     
+      
+  
+    </marquee>
+ 
+  </div>
+  </div>
+
+
+
+	
+
+
+<div class="container">
+  <div class="row" style="width: 100%;">
+  <div class="col-md-4 padtb10" >
+    <img src="{% static "img/s2.jpg"%} " alt="" >
+  </div>
+  <div class="col-md-8 padtb10">
+  <strong class="about9"> Name of the college :</strong> <samp class="cab1"> Bholaram Shiblall Kharakia College.</samp>  <br>
+  <strong class="about9"> Address : </strong><samp class="cab1"> Post - Maithon, Dist - Dhanbad, Pin - 828207, Jharkhand </samp><br>
+  <strong class="about9"> Location : </strong> <samp class="cab1">Urban</samp> <br>
+  <strong class="about9">  Affiliating University :</strong> <samp class="cab1"> Binod Bihari Mahto Koyalanchal University , Dhanbad (Pdf) </samp><br>
+  <strong class="about9">  Year of Establishment :</strong><samp class="cab1">  1966 (Pdf)</samp> <br>
+  <strong class="about9">  Year of affiliation :</strong> <samp class="cab1"> 1980 (Pdf) </samp><br>
+  <strong class="about9">  Year of recognition (2f & 12B) :</strong> <samp class="cab1"> 1980 (Pdf)</samp> <br>
+  <strong class="about9">  Type :</strong>  <samp class="cab1">Govt.</samp> <br>
+  <strong class="about9">  Category :</strong> <samp class="cab1"> Constituent.</samp> <br>
+  <strong class="about9">  Courses offered :</strong>  <samp class="cab1">B.A-B.Sc.-B.Com HONOURS AND GENERAL</samp> <br>
+  <strong class="about9"> Profile of teaching staff:</strong> <samp class="cab2"><a href=""> Click on the link</a></samp> <br>
+  <strong class="about9">  Physical facilities and Infrastructure :</strong> <samp class="cab2"><a href=""> Click on the link</a></samp> <br>
+  <strong class="about9">  Enrolment and Examination result :</strong>  <samp class="cab2"><a href="">Click on the link</a></samp> <br>
+  <strong class="about9">  Income and Expenditure statement (Audited) :</strong> <samp class="cab2"><a href=""> Click on the link</a></samp> <br>
+   
+  </div></div>
+</div>
+
+
+
+<div class="container">
+    <div class="row snbc" style="width: 100%;">
+        <div class="col-md-6 pad121" >
+          
+           <u><center> <b class="sn">Student Notices</b></center></u>
+           {% for Note1 in Note %} 
+          
+             <p class="notice"><i class="fa fa-envelope"></i>&nbsp;&nbsp;  {{ Note1.title }} <a href="{{ Note1.attach_file.url }}" download="new"> &nbsp;&nbsp; Download Notice</a>  </p>
+           
+           {% endfor %}
+
+      
+             
+            
+          
+        </div>
+        <div class="col-md-6 pad121" >
+        <u>  <center><b class="sn">Teachers Notices</b></center></u>
+          
+        {% for teacher in teach %}
+        <p class="notice"><i class="fa fa-envelope"></i>&nbsp;&nbsp;  {{ teacher.title }} <a href="{{ teacher.attach_file.url }}" download="new"> &nbsp;&nbsp; Download Notice</a>  </p>
+               
+        {% endfor %}
+           
+        </div>
+  </div>
+</div>
+
+
+<!--div style="width: 100%;">
+  <div class="container">
+    <div class="row" style="width:100%;">
+      <div class="col-3 ">
+        <div class="img89">
+        <img class="img8" src="img/01.jpg" alt="" ><br>
+        <b>Principal</b>
+        </div>
+      </div>
+      <div class="col-3 ">
+        <div class="img89">
+   <img class="img8" src="img/02.jpg" alt="" ><br>
+   <b>Chairman</b>
+  </div>    
+  </div>
+      <div class="col-3 ">
+        <div class="img89">
+         
+  <img class="img8" src="img/3.jpg" ><br>
+  <b>Vise Chairman</b>
+      </div></div>
+      <div class="col-3 ">
+        <div class="img89">
+  <img class="img8" src="img/04.jpg" alt="" ><br>
+  <b class="img88">Assistant Professor</b>
+      </div></div>
+   </div>
+  </div>
+  </!--div-->
+
+
+<div style="width: 100%;">
+  <div class="container" style="padding-left:40px; padding-right:40px ">
+    <div class="row" style="width: 100%;">
+      <div class="col-md-3"> 
+       <b class="vc3"> University Administration</b><br>
+    <a href="" class="un">   <li class="limar"> Officers Of The University </li> </a>
+    <a href="" class="un"><li class="limar">Leadership And Organization</li>  </a>
+      <a href="" class="un"><li class="limar">Governing Bodies</li>  </a>
+        <a href="" class="un"><li class="limar">Telephone Directory</li>  </a>
+          <a href="" class="un"><li class="limar"> Public Relations Office</li> </a>
+          <b class="vc3"> University Administration</b><br>
+          <a href="" class="un">   <li class="limar"> Officers Of The University </li> </a>
+          <a href="" class="un"><li class="limar">Leadership And Organization</li>  </a>
+            <a href="" class="un"><li class="limar">Governing Bodies</li>  </a>
+              <a href="" class="un"><li class="limar">Telephone Directory</li>  </a>
+                <a href="" class="un"><li class="limar"> Public Relations Office</li> </a>
+                <b class="vc3"> University Administration</b><br>
+                <a href="" class="un">   <li class="limar"> Officers Of The University </li> </a>
+                <a href="" class="un"><li class="limar">Leadership And Organization</li>  </a>
+                  <a href="" class="un"><li class="limar">Governing Bodies</li>  </a>
+                    <a href="" class="un"><li class="limar">Telephone Directory</li>  </a>
+                      <a href="" class="un"><li class="limar"> Public Relations Office</li> </a>
+                      <b class="vc3"> University Administration</b><br>
+                      <a href="" class="un">   <li class="limar"> Officers Of The University </li> </a>
+                      <a href="" class="un"><li class="limar">Leadership And Organization</li>  </a>
+                        <a href="" class="un"><li class="limar">Governing Bodies</li>  </a>
+                          <a href="" class="un"><li class="limar">Telephone Directory</li>  </a>
+                            <a href="" class="un"><li class="limar"> Public Relations Office</li> </a>
+      </div>
+      <div class="col-md-6 pad10 bord he1" > 
+       <div class="row" style="width: 100%;">
+      <div class="col-md-6 pad10" style=" width: 100%;">
+        
+      <b class="vc "> THE FOUNDER  </b> 
+        <img src="{%static "img/ss2.jpg"%} " alt="" width="100%">
+      <p class="q"> <strong> Sir Syed Ahmad Khan,</strong>  one of the architects of modern India was born on October 17, 1817 in Delhi and started his career as a civil servant. The 1857 revolt was one of the turning points in Syed Ahmed's life</p>
+      </div>   
+      <div class="col-md-6 pad10" style=" width: 100%;">
+       <b class="vc ">VC MESSAGE </b> 
+         <img src="{%static "img/vc1.jpg"%} " alt="" width="100%">
+       <p class="q"><strong> Dear Students,</strong> Parents and Aligs Our glorious institution, the Aligarh Muslim University has been passing through challenging times.</p>
+        </div>
+        <div class="col-md-6 pad10" style=" width: 100%;">
+          <b class="vc ">WELCOME TO AMU </b> 
+            <img src="{%static "img/amu.png"%} " width="100%">
+         <p class="q">  <strong> Aligarh Muslim University</strong> Accredited by NAAC in 'A' grade having 13 Faculties viz. Agricultural Sciences, Arts, Commerce, Engineering & Technology, Law etc., each comprising of several Departments of Studies.</p>
+           </div>
+           <div class="col-md-6 pad10" style=" width: 100%;">
+            <b class="vc ">ACADEMICS </b> 
+              <img src="{%static "img/academic.png"%} " alt="" width="100%">
+          <p class="q">   <strong> Aligarh Muslim University (AMU)</strong> draws students from all corners of the country as well as foreign countries, especially Africa, West Asia and Southeast Asia. </p>  </div>
+            
+     
+        </div>
+        
+      </div>
+      <div class="col-md-3 " style="padding-bottom: 15px; padding-left: 15px;">
+      
+        <b class="vc2">Upcoming Events</b> <br>
+      
+       <a href=""> <p>View Past Evants>>></p></a>
+      
+      <div>
+        <b class="vc2">Research Highlights</b> 
+        <img src="{%static "img/cg.jpg"%}"  alt="" width="100%">
+        <b>Low Cost ECG Signal Acquisition and Feature Extraction with Computer Aided Analysis</b><br>
+        Aftab Usmani, Haris siddiqui, Ali Shahzan <br>
+
+        <button style="color: white; background-color: brown; ">View All Highlights</button>
+      </div>
+             
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row pdis"  >
+    <div class="col-md-3 " style="padding-top: 10px;">
+      <div class="zo">
+      <div class="pir ">
+  <center><img class="zoom1" src="{%static "img/02.png"%} " alt=""></center>
+  </div></div>
+    </div>
+    <div class="col-md-9">
+      <div style="padding-top: 30px; padding-left: 10px;">
+      <div class="pms">
+        <p class="prinm">Principal Message</p>
+       <p class="prism"> 5-11thOctober 2020A Seven Day National Online Training program on Entrepreneurship Development Program, from 5th to 11th October 2020 conducted by Centre for Entrepreneurship Development & Business Sustainability (Mini Centre), RUSA 2.0, Dept. of Business Management, UCC&BM, O.U.
+      </p> </div></div>
+       </div>
+  </div>
+  </div>
+<div class="row " style="width: 100%;">
+  <div class="container">
+<div class="col-md-12 ">
+  <div style="background-color:rgb(112, 120, 141); padding-left: 15px;">
+<u>  <b class="font25">  Gallary</b></u>
+<div>
+  {% for gal1 in gal %}
+  <img class="img-responsive zoom" src="{{ gal1.images_g.url }} " alt="" width="130px" height="130px">
+  {% endfor %}
+
+
+
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+<div class="col-md-12">
+    <div class="row foo" >
+      
+      <div class="col-md-3">
+        <b><u> Quick Links</u></b><br>
+        <a class="ql" href="">Annual Report</a><br>
+        <a class="ql" href=""> AMU Gazette</a> <br>
+          <a class="ql" href="">AMU Special Centers</a> <br>
+            <a class="ql" href=""> Academic Programmes Committee </a><br>
+              <a class="ql" href="">  Campus Notices</a> <br>
+                <a class="ql" href=""> Chemical Research Unit</a> <br>
+                  <a class="ql" href=""> Prof. M.N. Faruqui Computer Centre</a> <br>
+                    <a class="ql" href=""> OSO-AMUPurchase & Tenders </a><br>
+      </div>
+      <div class="col-md-3"><br><a class="ql" href=""> CPCDirectoriesEmployee Services</a> <br>
+        <a class="ql" href=""> Facilities</a> <br>
+          <a class="ql" href=""> Fikr-O-Nazar</a> <br>
+            <a class="ql" href="">  Green University Project</a> <br>
+              <a class="ql" href=""> Heritage CellIntellectual</a> <br>
+                <a class="ql" href="">  RTITransparency Officer</a> <br>
+                  <a class="ql" href="">  Search Profile</a> <br>
+                    <a class="ql" href="">  Tahzeeb-ul-AkhlaqTarana</a>
+      </div>
+      <div class="col-md-3"><br> <a class="ql" href=""> Property CellInternal Complaints Committee</a> <br>
+        <a class="ql" href=""> IQAC </a><br>
+          <a class="ql" href="">   Innovation</a> <br>
+            <a class="ql" href="">   CouncilIT</a> <br>
+              <a class="ql" href="">  Help</a> <br>
+                <a class="ql" href=""> DeskJobs at AMUMaps</a> <br>
+                  <a class="ql" href=""> Musa Dakri Museum </a>
+         
+         
+        
+        </div> 
+        <div class="col-md-3"><b>
+         <u> Contact Us</u> </b><br>
+         <a class="ql" href=""> <i class="fa fa-map-marker" aria-hidden="true"></i> Rathbari,Malda,731250,West Bangal</a> <br>
+          <a class="ql" href=""> <i class="fa fa-envelope" aria-hidden="true"></i> apurbamandal720@gmail.com</a><br>
+            <a class="ql" href="">  <i class="fa fa-phone-square" aria-hidden="true"></i> 6296813420</a> <br>
+              <a class="ql" href=""> <i class="fa fa-whatsapp" aria-hidden="true"></i> 8016405821</a>
+      
+        </div>
+      </div>
+    </div>
+ 
+
+	
+
+<div style="width: 100%;">
+  <div class="continer"><marquee class="foo" behavior="scroll" direction="left"
+    onmouseover="this.stop();"
+    onmouseout="this.start();" scrollamount="5">
+    <div> <img class="zoom" src="img/001.png" alt="">  
+    <img class="zoom" src="{%static "img/002.png"%} " alt=""> 
+    <img class="zoom" src="{%static "img/004.jpg"%}" alt=""> 
+    <img class="zoom" src="{%static "img/005.png"%}" alt="">
+    <img class="zoom" src="{%static "img/006.png"%}" alt="">
+    <img class="zoom" src="{%static "img/007.png"%}" alt="">
+    <img class="zoom" src="{%static "img/008.png"%}" alt="">
+    <img class="zoom" src="{%static "img/009.png"%}" alt="">
+    <img class="zoom" src="{%static "img/0010.png"%}" alt="">
+    <img class="zoom" src="{%static "img/0011.png"%}" alt="">
+    <img class="zoom" src="{%static "img/005.png"%} " alt="">
+  </marquee>
+  </div>
+</div>
+   <!-- col class automatically divides my columns
+   into equal parts -->
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i>Top</button>
+
+  <footer style="background-color: black;width: 100%;">
+    
+      <div class="container foot" style="color: azure;"> 
+       <center> Copyright © 2019 Apu College crafted with  in Gen Next Information Technology. All Rights Reserved</center>
+      </div>
+    
+  </footer>
+    
+
+
+	<script src="{%static "js/jquery-2.1.4.min.js"%} "></script>
+	
+	
+	
+
+	
+
+	
+
+	<!-- flexisel (for special offers) -->
+	<script src="{%static "js/jquery.flexisel.js"%}"></script>
+	<script>
+		$(window).load(function () {
+			$("#flexiselDemo1").flexisel({
+				visibleItems: 3,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+				responsiveBreakpoints: {
+					portrait: {
+						changePoint: 480,
+						visibleItems: 1
+					},
+					landscape: {
+						changePoint: 640,
+						visibleItems: 2
+					},
+					tablet: {
+						changePoint: 768,
+						visibleItems: 2
+					}
+				}
+			});
+
+		});
+	</script>
+
+
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+  
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+ 
+
+
+  </body>
+</html>
